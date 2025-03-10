@@ -34,13 +34,15 @@ const ArticleDetail: React.FC<ArticleDetailProps> = ({ title, content, images })
             <p key={index} className="text-lg mb-4 text-gray-600">{paragraph}</p>
           ))}
         </div>
-        <div className="flex flex-wrap -mx-4">
-          {images.map((image, index) => (
-            <div key={index} className="w-full lg:w-1/2 px-4 mb-8">
-              <img src={image} alt={`Image ${index + 1}`} className="w-full h-auto object-cover rounded-md" />
-            </div>
-          ))}
-        </div>
+        {images.length > 0 && (
+          <div className="flex flex-wrap -mx-4">
+            {images.map((image, index) => (
+              <div key={index} className="w-full lg:w-1/2 px-4 mb-8">
+                <img src={image} alt={`Image ${index + 1}`} className="w-full h-auto object-cover rounded-md" />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
       <Footer />
     </div>
