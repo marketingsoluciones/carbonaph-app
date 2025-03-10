@@ -47,7 +47,7 @@ const Formulario: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-4 bg-white rounded shadow-md">
+    <form onSubmit={handleSubmit} className="w-full max-w-80 lg:w-full lg:max-w-1/2 mx-auto p-4 bg-white rounded shadow-md">
       <h2 className="text-2xl font-bold mb-4">Contacto</h2>
       {error && <p className="text-red-500 mb-4">{error}</p>}
       {success && <p className="text-green-500 mb-4">{success}</p>}
