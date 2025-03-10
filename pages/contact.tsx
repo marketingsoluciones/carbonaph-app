@@ -2,6 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Header/Navbar';
+import Formulario from '@/components/formulario';
 
 const Contact: React.FC = () => {
   const router = useRouter();
@@ -22,7 +23,7 @@ const Contact: React.FC = () => {
         </button>
         <span>Home - Contact</span>
       </div>
-
+<Formulario/>
       </div>
 
       <Footer />
