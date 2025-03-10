@@ -5,7 +5,8 @@ const Footer: React.FC = () => {
     <div className="w-full bg-cover text-white py-10" style={{ backgroundImage: "url('/images/footer-background.jpg')" }}>
       <div className="container mx-auto max-w-screen-xl px-4">
         <div className="flex flex-wrap -mx-4">
-          <div className="w-full lg:w-1/2 px-4 mb-8 lg:mb-0">
+
+          <div className="w-full lg:w-1/2 p-4 mb-8 lg:mb-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.7)' }}>
             <h2 className="text-2xl font-bold mb-2">CarbonaPH R&D</h2>
             <h3 className="text-lg mb-4">29 Pl. de la République,
             72600 Mamers, France.</h3>
@@ -51,6 +52,7 @@ const Footer: React.FC = () => {
               Call us on: +41415050025. Copyright ©2022 CarbonaphRD.com, All Rights Reserved.
             </div>
           </div>
+
           <div className="w-full lg:w-1/2 px-4">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.990275897674!2d0.3685673156741937!3d48.34991997923916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e1d6f1e1e1e1e1%3A0x1e1e1e1e1e1e1e1e!2s29%20Pl.%20de%20la%20R%C3%A9publique%2C%2072600%20Mamers%2C%20France!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus"
